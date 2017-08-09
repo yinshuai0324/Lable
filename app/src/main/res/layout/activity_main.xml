@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.yinshuai.thelabel.MainActivity">
+
+    <com.example.yinshuai.thelabel.Lable
+        android:id="@+id/lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/aa"
+        app:lable_notextColor="#bcbcbc"
+        app:lable_opttextColor="#ff8977"
+        app:lable_margin="8"
+        app:lable_padding="6"
+        app:lable_textSize="16dp">
+
+    </com.example.yinshuai.thelabel.Lable>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取选中的内容"/>
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消全部选中"/>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="18dp"
+        android:textColor="@android:color/holo_red_dark"/>
+
+</LinearLayout>

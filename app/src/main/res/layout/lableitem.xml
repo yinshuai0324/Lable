@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <RadioButton
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asd"
+            android:background="@drawable/select"
+            android:button="@null"
+            android:textSize="20dp"
+            android:padding="4dp"/>
+
+    </RelativeLayout>
+
