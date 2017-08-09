@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 lable.clearSelect(); //取消全部选中
+                lable2.clearSelect();
             }
         });
     }
