@@ -37,6 +37,7 @@ public class Lable extends ViewGroup {
     private int no_textcolor=0;
     private int padding = 0;
     private int margin = 0;
+    private boolean ismultiple=true;
 
     private int scenewidth;
     private boolean isbr = true;
@@ -65,6 +66,7 @@ public class Lable extends ViewGroup {
         no_textcolor=typedArray.getColor(R.styleable.Lable_lable_notextColor,Color.BLACK);
         padding=typedArray.getInteger(R.styleable.Lable_lable_padding,10);
         margin=typedArray.getInteger(R.styleable.Lable_lable_margin,8);
+        ismultiple=typedArray.getBoolean(R.styleable.Lable_lable_ismultiple,true);
         init();
     }
 
@@ -315,6 +317,10 @@ public class Lable extends ViewGroup {
             this.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    if (!ismultiple){
+                        clearSelect();
+                    }
+
                     if (select == 0) {
                         setChecked(true);
                         select = 1;

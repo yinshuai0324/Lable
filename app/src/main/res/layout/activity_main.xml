@@ -16,9 +16,19 @@
         app:lable_opttextColor="#ff8977"
         app:lable_margin="8"
         app:lable_padding="6"
-        app:lable_textSize="16dp">
+        app:lable_textSize="16dp"
+        app:lable_ismultiple="false">
 
     </com.example.yinshuai.thelabel.Lable>
+
+    <!--
+        lable_notextColor 未选中时文字的颜色
+        lable_opttextColor 选中时文字的颜色
+        lable_margin  外边距(int型)
+        lable_padding 内边距(int型)
+        lable_textSize 文字的大小
+        lable_ismultiple 是否可多选 false-单选  true-多选
+    -->
 
     <LinearLayout
         android:layout_width="match_parent"

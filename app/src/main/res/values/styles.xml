@@ -14,5 +14,6 @@
         <attr name="lable_notextColor" format="color"></attr>
         <attr name="lable_padding" format="integer"></attr>
         <attr name="lable_margin" format="integer"></attr>
+        <attr name="lable_ismultiple" format="boolean"></attr>
     </declare-styleable>
 </resources>
