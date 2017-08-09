@@ -6,7 +6,7 @@
 ****
 
 ## 效果展示
-[效果](https://github.com/yinshuaiblog/Lable/blob/master/Lable.gif)
+![效果](https://github.com/yinshuaiblog/Lable/blob/master/Lable.gif)
 
 ### 属性说明
 |属性名|用途|
