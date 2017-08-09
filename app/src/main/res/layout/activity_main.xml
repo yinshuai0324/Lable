@@ -7,10 +7,18 @@
     android:orientation="vertical"
     tools:context="com.example.yinshuai.thelabel.MainActivity">
 
-    <com.example.yinshuai.thelabel.Lable
-        android:id="@+id/lable"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="@color/colorAccent"
+        android:text="单选:"/>
+
+    <com.example.yinshuai.thelabel.Lable
+        android:id="@+id/lable2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:background="@color/aa"
         app:lable_notextColor="#bcbcbc"
         app:lable_opttextColor="#ff8977"
@@ -20,6 +28,33 @@
         app:lable_ismultiple="false">
 
     </com.example.yinshuai.thelabel.Lable>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="@color/colorAccent"
+        android:text="多选:"/>
+
+    <com.example.yinshuai.thelabel.Lable
+        android:id="@+id/lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/aa"
+        app:lable_notextColor="#bcbcbc"
+        android:layout_marginTop="5dp"
+        app:lable_opttextColor="#ff8977"
+        app:lable_margin="8"
+        app:lable_padding="6"
+        app:lable_textSize="16dp"
+        app:lable_ismultiple="true">
+
+    </com.example.yinshuai.thelabel.Lable>
+
+
+
+
+
 
     <!--
         lable_notextColor 未选中时文字的颜色
@@ -49,9 +84,17 @@
     </LinearLayout>
 
 
+    <TextView
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="18dp"
+        android:textColor="@android:color/holo_red_dark"/>
+
 
     <TextView
-        android:id="@+id/content"
+        android:id="@+id/multiple"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"

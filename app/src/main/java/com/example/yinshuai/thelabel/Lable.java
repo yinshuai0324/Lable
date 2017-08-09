@@ -204,7 +204,7 @@ public class Lable extends ViewGroup {
             LableItem lableItem = (LableItem) getChildAt(i);
             lableItems.add(lableItem);
             // 获取标签宽度
-            int itemWidth = getLableWidth(paint, listcount.get(i));
+            int itemWidth = getLableWidth(paint, listcount.get(i))+margin;
 
             if (width + itemWidth > scenewidth) { //如果item的宽度加上下一个item的宽度大于屏幕宽度的话 那么这个时候就要换行了
                 height += itemheight + margin + padding;

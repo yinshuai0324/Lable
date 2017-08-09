@@ -12,7 +12,9 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     Lable lable;
-    TextView textView;
+    Lable lable2;
+    TextView multiple;
+    TextView radio;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +23,11 @@ public class MainActivity extends AppCompatActivity {
 
         lable= (Lable) findViewById(R.id.lable);
         lable.setDataList(getData());
+
+        lable2= (Lable) findViewById(R.id.lable2);
+        lable2.setDataList(getData());
+
+
 
         lable.setOnItemSelectClickListener(new Lable.OnItemSelectClickListener() { //设置item选中监听
             @Override
@@ -43,11 +50,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        textView= (TextView) findViewById(R.id.content);
+        multiple= (TextView) findViewById(R.id.multiple);
+        radio= (TextView) findViewById(R.id.radio);
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                textView.setText("选中的内容:"+lable.getSelectContent().toString()); //获取选中的全部内容
+                multiple.setText("多选的内容:\n"+lable.getSelectContent().toString()); //获取选中的全部内容
+                radio.setText("单选的内容:\n"+lable2.getSelectContent().toString());
             }
         });
 
@@ -67,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
     public List<String> getData() {
         List<String> list = new ArrayList<>();
         Random random = new Random();
-        for (int i = 0; i < 40; i++) {
+        for (int i = 0; i < 20; i++) {
             switch (random.nextInt(10)) {
                 case 0:
                     list.add("干净卫生");
