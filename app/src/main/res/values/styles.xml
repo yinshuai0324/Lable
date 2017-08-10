@@ -15,5 +15,6 @@
         <attr name="lable_padding" format="integer"></attr>
         <attr name="lable_margin" format="integer"></attr>
         <attr name="lable_ismultiple" format="boolean"></attr>
+        <attr name="lable_isclick" format="boolean"></attr>
     </declare-styleable>
 </resources>

@@ -41,6 +41,7 @@ public class Lable extends ViewGroup {
 
     private int scenewidth;
     private boolean isbr = true;
+    private boolean isclick=true;
     private Paint paint;
     private List<String> listcount = new ArrayList<>();
     private Context mContext;
@@ -67,6 +68,7 @@ public class Lable extends ViewGroup {
         padding=typedArray.getInteger(R.styleable.Lable_lable_padding,10);
         margin=typedArray.getInteger(R.styleable.Lable_lable_margin,8);
         ismultiple=typedArray.getBoolean(R.styleable.Lable_lable_ismultiple,true);
+        isclick=typedArray.getBoolean(R.styleable.Lable_lable_isclick,true);
         init();
     }
 
@@ -310,6 +312,10 @@ public class Lable extends ViewGroup {
             setTextColor(no_textcolor);
             setPadding(padding, padding, padding, padding);
             setGravity(Gravity.CENTER);
+
+            if (!isclick){
+                setEnabled(false);
+            }
         }
 
 
@@ -320,7 +326,6 @@ public class Lable extends ViewGroup {
                     if (!ismultiple){
                         clearSelect();
                     }
-
                     if (select == 0) {
                         setChecked(true);
                         select = 1;

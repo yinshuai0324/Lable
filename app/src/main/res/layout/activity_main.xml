@@ -24,7 +24,8 @@
         app:lable_margin="8"
         app:lable_padding="6"
         app:lable_textSize="16dp"
-        app:lable_ismultiple="false">
+        app:lable_ismultiple="false"
+        app:lable_isclick="true">
 
     </com.example.yinshuai.thelabel.Lable>
 
@@ -46,7 +47,8 @@
         app:lable_margin="8"
         app:lable_padding="6"
         app:lable_textSize="16dp"
-        app:lable_ismultiple="true">
+        app:lable_ismultiple="true"
+        app:lable_isclick="true">
 
     </com.example.yinshuai.thelabel.Lable>
 
