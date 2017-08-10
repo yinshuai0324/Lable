@@ -17,6 +17,7 @@
 |`lable_padding`|**内边距(int型)**|
 |`lable_textSize`|**文字的大小**|
 |`lable_ismultiple`|**是否可多选 false-单选  true-多选**|
+|`lable_isclick`|**是否可点击**|
 
 ### 方法说明
 |方法名|用途|
