@@ -164,7 +164,7 @@ public class Lable extends ViewGroup {
                     isbr = false; //换行标识
                 }
                 if (isbr) {
-                    width += itemWidth + margin;//如果没有换行 就按实际的宽度去测量
+                    width += itemWidth+margin*2;//如果没有换行 就按实际的宽度去测量
                 } else {
                     width = widthSize; //只要换行了 就证明宽度是充满的
                 }
@@ -174,6 +174,8 @@ public class Lable extends ViewGroup {
             if (isbr)
                 width += margin;//这是为了在没有换行的情况下 最后在加上一个外边距
         }
+
+//        width+=margin*getChildCount()+padding;
         setMeasuredDimension(width, height);
     }
 
